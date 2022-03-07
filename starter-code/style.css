@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+:root {
+	--primary: #3ee9e5;
+	--secondary: #093f68;
+	--grey: #777f98;
+	--white: #fff;
+	--bg: #080c20;
+	--error: #ff2965;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+input,
+select,
+button {
+	border: none;
+	outline: none;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+	background: none;
+}
+
+body {
+	font-family: "Manrope", sans-serif;
+	background-color: var(--bg);
+	color: var(--white);
+}
+
+/* utilities */
+
+.font-base {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.font-sm {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 800;
+}
+
+.font-md {
+	font-size: 2rem;
+	line-height: 44px;
+	font-weight: 800;
+}
+
+.font-lg {
+	font-size: 2.5rem;
+	line-height: 55px;
+	font-weight: 800;
+}
+
+.font-xl {
+	font-size: 3rem;
+	line-height: 56px;
+	font-weight: 800;
+}
+
+.text-primary {
+	color: var(--primary);
+}
+
+.text-grey {
+	color: var(--grey);
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* clasess */
+
+/* header start */
+.header {
+	padding-top: 2.5rem;
+	padding-bottom: 4rem;
+}
+
+.header img {
+	margin: 0 auto;
+}
+
+/* header end */
+
+/* hero start */
+.hero {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+}
+
+.hero__bg--mobile {
+	background-image: url("./assets/illustration-hero-mobile.png");
+	background-size: cover;
+	min-height: 233px;
+}
+
+.hero__content {
+	padding: 0 1.5rem;
+}
+
+.hero__description {
+	margin: 1.5rem 0 2rem;
+}
+
+.hero__mouse {
+	margin: 0 auto;
+}
+
+/* hero end */
+
+/* features start */
+.features {
+	padding: 9rem 1.5rem;
+}
+
+.features__item:not(:last-child) {
+	margin-bottom: 3.5rem;
+}
+
+.features__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.features__item-img {
+	width: 120px;
+	height: 120px;
+	display: grid;
+	place-content: center;
+	border-radius: 3rem;
+	background: var(--secondary);
+}
+
+.features__item-caption {
+	margin-bottom: 0.75rem;
+}
+/* features end */
+
+/* pricing start */
+.pricing {
+	padding: 0 1.5rem;
+}
+
+.pricing__title {
+	margin-bottom: 1.75rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.pricing__description {
+	margin-bottom: 3.5rem;
+}
+
+.pricing__card-container {
+	display: flex;
+	flex-direction: column;
+	/* might be 4rem due to the position img */
+	/* gap: 2rem; */
+	gap: 4rem;
+}
+
+.pricing__card {
+	background: var(--secondary);
+	border-radius: 0.5rem;
+	padding: 3rem 1.75rem 2rem;
+	position: relative;
+}
+
+.pricing__card-header img {
+	position: absolute;
+	top: 0;
+	left: 30px;
+	transform: translateY(-50%);
+}
+
+.pricing__card-header h4 {
+	margin-bottom: 1.25rem;
+}
+
+.pricing__card-body {
+	margin-top: 1.5rem;
+}
+
+.pricing__card-body h3 {
+	margin-bottom: 1.25rem;
+}
+
+.pricing__card-body li {
+	list-style-image: url("./assets/icon-check-primary.svg");
+	padding-left: 1rem;
+	margin-left: 1rem;
+}
+
+.pricing__card-body li:not(:last-child) {
+	margin-bottom: 0.75rem;
+}
+/* pricing end */
