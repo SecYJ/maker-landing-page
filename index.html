@@ -13,6 +13,7 @@
 
 		<title>Frontend Mentor | Maker pre-launch landing page</title>
 		<link rel="stylesheet" href="style.css" />
+		<script defer src="./app.js"></script>
 	</head>
 	<body>
 		<!-- header -->
@@ -23,11 +24,11 @@
 		<main>
 			<!-- hero section -->
 			<section class="hero">
-				<div class="hero__bg--desktop"></div>
-				<div class="hero__bg--desktop"></div>
+				<div class="hero__bg--desktop--left"></div>
+				<div class="hero__bg--desktop--right"></div>
 				<div class="hero__bg--mobile"></div>
 				<div class="hero__content text-center">
-					<h1 class="font-md">
+					<h1 class="font-md font-extrabold">
 						Get paid for the work you
 						<span class="text-primary">love</span> to do.
 					</h1>
@@ -48,7 +49,7 @@
 			</section>
 
 			<section class="features">
-				<ul class="features__container text-center">
+				<ul class="features__container">
 					<li class="features__item">
 						<div class="features__item-img">
 							<img
@@ -57,7 +58,9 @@
 							/>
 						</div>
 						<div>
-							<h5 class="features__item-caption font-sm">
+							<h5
+								class="features__item-caption font-sm font-extrabold"
+							>
 								Indulge your passions
 							</h5>
 							<p class="font-base text-grey">
@@ -74,7 +77,9 @@
 							/>
 						</div>
 						<div>
-							<h5 class="features__item-caption font-sm">
+							<h5
+								class="features__item-caption font-sm font-extrabold"
+							>
 								Gain financial freedom
 							</h5>
 							<p class="font-base text-grey">
@@ -91,7 +96,9 @@
 							/>
 						</div>
 						<div>
-							<h5 class="features__item-caption font-sm">
+							<h5
+								class="features__item-caption font-sm font-extrabold"
+							>
 								Choose your lifestyle
 							</h5>
 							<p class="font-base text-grey">
@@ -108,7 +115,9 @@
 							/>
 						</div>
 						<div>
-							<h5 class="features__item-caption font-sm">
+							<h5
+								class="features__item-caption font-sm font-extrabold"
+							>
 								Work from anywhere
 							</h5>
 							<p class="font-base text-grey">
@@ -121,25 +130,27 @@
 			</section>
 
 			<section class="pricing">
-				<h2 class="pricing__title text-center">Our pricing plans</h2>
+				<h2 class="pricing__title text-center font-extrabold">
+					Our pricing plans
+				</h2>
 				<p class="pricing__description text-grey text-center font-base">
 					We only make money when our creators make money. Our plans
 					are always affordable, and it's completely free to get
 					started.
 				</p>
 				<div class="pricing__card-container">
-					<div class="pricing__card">
+					<div class="pricing__card pricing__card--secondary">
 						<div class="pricing__card-header">
 							<img src="./assets/icon-free.svg" alt="free" />
-							<h4 class="font-sm">Dip your toe</h4>
-							<p class="text-grey">
+							<h4 class="font-sm font-extrabold">Dip your toe</h4>
+							<p class="font-base">
 								Just getting started? No problem at all! Our
 								free plan will take you a long way.
 							</p>
 						</div>
 						<div class="pricing__card-body">
-							<h3 class="font-lg">Free</h3>
-							<ul>
+							<h3 class="font-lg font-extrabold">Free</h3>
+							<ul class="font-base">
 								<li>Unlimited products</li>
 								<li>Basic analytics</li>
 								<li>Limited marketplace exposure</li>
@@ -147,33 +158,53 @@
 							</ul>
 						</div>
 					</div>
-					<div class="pricing__card"></div>
+					<div class="pricing__card pricing__card--primary">
+						<div class="pricing__card-header">
+							<img src="./assets/icon-paid.svg" alt="paid" />
+							<h4 class="font-sm font-extrabold">
+								Dive right in
+							</h4>
+							<p class="text-bg font-base">
+								Ready for the big time? Our paid plan will help
+								you take your business to the next level.
+							</p>
+						</div>
+						<div class="pricing__card-body">
+							<h3 class="font-lg font-extrabold">
+								$25.00
+								<span class="font-base text-grey">/ month</span>
+							</h3>
+							<ul class="font-base">
+								<li>Custom domain</li>
+								<li>Advanced analytics and reports</li>
+								<li>High marketplace visibility</li>
+								<li>5% fee per transaction</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<div>bg hero squiggle</div>
-		<img src="../starter-code/assets/bg-hero-squiggle.svg" alt="" />
-
-		<div>illustration lifestyle</div>
-		<img src="../starter-code/assets/illustration-lifestyle.svg" alt="" />
-
-		<div>illustration financial freedom</div>
-		<img
-			src="../starter-code/assets/illustration-financial-freedom.svg"
-			alt=""
-		/>
-
-		<div>illustration passions</div>
-		<img src="../starter-code/assets/illustration-passions.svg" alt="" />
-
-		<div>illustration-hero-left</div>
-		<img src="../starter-code/assets/illustration-hero-left.svg" alt="" />
-
-		<div>illustration-hero-right</div>
-		<img src="../starter-code/assets/illustration-hero-right.svg" alt="" />
-
-		<div>illustration hero mobile</div>
-		<img src="../starter-code/assets/illustration-hero-mobile.png" alt="" />
+		<footer class="footer">
+			<h2 class="footer__title text-center font-extrabold">
+				Get notified when we launch
+			</h2>
+			<form class="footer__form">
+				<div class="footer__form-control">
+					<input
+						type="text"
+						class="text-grey font-base font-extrabold"
+						placeholder="Email address"
+					/>
+					<div class="form__error-msg text-center"></div>
+				</div>
+				<div class="footer__form-control">
+					<button type="submit" class="font-extrabold">
+						Get notified
+					</button>
+				</div>
+			</form>
+		</footer>
 	</body>
 </html>
