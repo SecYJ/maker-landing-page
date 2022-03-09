@@ -155,8 +155,8 @@ body {
 }
 
 .features__container {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 3.5rem;
 }
 
@@ -411,7 +411,7 @@ body {
 
 	.features__container {
 		gap: 2.5rem;
-		align-items: center;
+		justify-items: center;
 	}
 
 	.features__item:nth-child(even) {
@@ -479,7 +479,8 @@ body {
 	}
 
 	.features__container {
-		flex-direction: row;
+		grid-template-columns: repeat(4, 255px);
+		justify-content: center;
 	}
 
 	.features__item {
