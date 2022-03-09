@@ -9,8 +9,6 @@ form.addEventListener("submit", (e) => {
 	errorMsg.textContent = "";
 	email.classList.remove("danger");
 
-	console.log("asdf");
-
 	if (!email.value.trim()) {
 		errorMsg.textContent = "Oops! Please add your email";
 		email.classList.add("danger");
